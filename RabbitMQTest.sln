@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTest.Client", "RabbitMQTest.Client\RabbitMQTest.Client.csproj", "{16098CDE-CC82-4001-A055-4C6D00AE3A6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQTest.Client", "RabbitMQTest.Client\RabbitMQTest.Client.csproj", "{16098CDE-CC82-4001-A055-4C6D00AE3A6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTest.Server", "RabbitMQTest.Server\RabbitMQTest.Server.csproj", "{6B604041-D1BC-4187-ABD4-6321A2BFD8E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQTest.Server", "RabbitMQTest.Server\RabbitMQTest.Server.csproj", "{6B604041-D1BC-4187-ABD4-6321A2BFD8E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTest.DeadLetter.Client", "RabbitMQTest.DeadLetter.Client\RabbitMQTest.DeadLetter.Client.csproj", "{5A3A795D-00E8-4B73-B7F6-A08B4F1A59AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "기본", "기본", "{72CB736A-6925-486E-B5AC-3B72F29256C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTest.DeadLetter.Server", "RabbitMQTest.DeadLetter.Server\RabbitMQTest.DeadLetter.Server.csproj", "{B55C69A8-76BA-4244-B3F0-DDEF07A2323C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,21 @@ Global
 		{6B604041-D1BC-4187-ABD4-6321A2BFD8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B604041-D1BC-4187-ABD4-6321A2BFD8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B604041-D1BC-4187-ABD4-6321A2BFD8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3A795D-00E8-4B73-B7F6-A08B4F1A59AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3A795D-00E8-4B73-B7F6-A08B4F1A59AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3A795D-00E8-4B73-B7F6-A08B4F1A59AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3A795D-00E8-4B73-B7F6-A08B4F1A59AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55C69A8-76BA-4244-B3F0-DDEF07A2323C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55C69A8-76BA-4244-B3F0-DDEF07A2323C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55C69A8-76BA-4244-B3F0-DDEF07A2323C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55C69A8-76BA-4244-B3F0-DDEF07A2323C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16098CDE-CC82-4001-A055-4C6D00AE3A6D} = {72CB736A-6925-486E-B5AC-3B72F29256C0}
+		{6B604041-D1BC-4187-ABD4-6321A2BFD8E7} = {72CB736A-6925-486E-B5AC-3B72F29256C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1D2811D-B982-4BC4-805E-AA3652DFBD47}
